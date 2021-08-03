@@ -1,3 +1,3 @@
-FROM ubuntu:20.04
-RUN apt-get update -y
-ENTRYPOINT ["/bin/cat","/proc/cpuinfo"]
+FROM centos:8
+RUN yum -y update && \
+dnf install podman buildah && \
