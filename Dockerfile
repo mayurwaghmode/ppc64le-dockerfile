@@ -1,2 +1,2 @@
 FROM centos
-RUN yum update -y
+CMD echo "Hello World from a container running on $(uname -m)"
